@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f7fa">
+  <title>Ludo Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="logic.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <h1>Ludo</h1>
+    <div
+      class="board"
+      id="board"
+      role="grid"
+      aria-label="Ludo board"
+    ></div>
+    <section class="controls" aria-label="Game controls">
+      <p class="turn" id="turn" aria-live="polite"></p>
+      <div class="dice" id="dice" aria-label="Dice result">—</div>
+      <button class="roll-button" id="roll-button" type="button">Roll Dice</button>
+      <button class="new-game-button" id="new-game-button" type="button">New Game</button>
+      <p class="message" id="message" aria-live="polite">Roll a 6 to bring a token onto the board.</p>
+    </section>
+    <p class="instructions">Roll a 6 to start. Then roll and click one of your highlighted tokens to move.</p>
+  </main>
+</body>
+</html>
